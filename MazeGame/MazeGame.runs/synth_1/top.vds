@@ -1,0 +1,829 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon May 08 12:09:33 2017
+# Process ID: 10284
+# Current directory: C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/synth_1/top.vds
+# Journal file: C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8664 
+WARNING: [Synth 8-2611] redeclaration of ansi port clkin is not allowed [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:13]
+WARNING: [Synth 8-976] clkin has already been declared [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:13]
+WARNING: [Synth 8-2654] second declaration of clkin ignored [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:13]
+INFO: [Synth 8-994] clkin is declared here [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 288.082 ; gain = 78.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:4]
+	Parameter imem_init bound to: imem_screentest_pause.mem - type: string 
+	Parameter dmem_init bound to: dmem_screentest.mem - type: string 
+	Parameter smem_init bound to: smem_screentest.mem - type: string 
+	Parameter bmem_init bound to: bmem_screentest.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'clockdivider_Nexys4' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:11]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20534]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 80 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (1#1) [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20534]
+WARNING: [Synth 8-350] instance 'mmcm' of module 'MMCME2_BASE' requires 18 connections, but only 10 given [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:17]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'INV' [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17255]
+INFO: [Synth 8-256] done synthesizing module 'INV' (3#1) [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17255]
+INFO: [Synth 8-638] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:696]
+	Parameter CLK_SEL_TYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'BUFGMUX' (4#1) [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:696]
+INFO: [Synth 8-256] done synthesizing module 'clockdivider_Nexys4' (5#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:11]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/new/mips.sv:11]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/controller.sv:39]
+INFO: [Synth 8-256] done synthesizing module 'controller' (6#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/controller.sv:39]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/datapath.sv:3]
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab8/Lab8.srcs/sources_1/new/register_file.sv:11]
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
+	Parameter initfile bound to: imem_screentest.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'imem_screentest.mem' is read successfully [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab8/Lab8.srcs/sources_1/new/register_file.sv:27]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (7#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab8/Lab8.srcs/sources_1/new/register_file.sv:11]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/ALU.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'addsub' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/addsub.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/add_sub_8bit.sv:3]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/fulladder.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (8#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/fulladder.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'adder' (9#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/add_sub_8bit.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'addsub' (10#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/addsub.sv:23]
+INFO: [Synth 8-638] synthesizing module 'shifter' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/shifter.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shifter' (11#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/shifter.sv:23]
+INFO: [Synth 8-638] synthesizing module 'logical' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/logical.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logical' (12#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/logical.sv:23]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/comparator.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (13#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/comparator.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (14#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab3/Lab3.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (15#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/imports/new/datapath.sv:3]
+INFO: [Synth 8-256] done synthesizing module 'mips' (16#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab9/Lab9.srcs/sources_1/new/mips.sv:11]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/new/imem.sv:26]
+	Parameter Nloc bound to: 512 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter imem_init bound to: imem_screentest_pause.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'imem_screentest_pause.mem' is read successfully [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/new/imem.sv:36]
+INFO: [Synth 8-256] done synthesizing module 'imem' (17#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/new/imem.sv:26]
+INFO: [Synth 8-638] synthesizing module 'memIO' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/memIO.sv:23]
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 16 - type: integer 
+	Parameter dmem_init bound to: dmem_screentest.mem - type: string 
+	Parameter smem_init bound to: smem_screentest.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'screenmemory' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/screenmemory.sv:4]
+INFO: [Synth 8-3876] $readmem data file 'smem_screentest.mem' is read successfully [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/screenmemory.sv:13]
+INFO: [Synth 8-256] done synthesizing module 'screenmemory' (18#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/screenmemory.sv:4]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/dmem.sv:3]
+	Parameter Nloc bound to: 64 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter initfile bound to: dmem_screentest.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'dmem_screentest.mem' is read successfully [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/dmem.sv:16]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (19#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/dmem.sv:3]
+WARNING: [Synth 8-689] width (8) of port connection 'addr' does not match port width (6) of module 'dmem' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/memIO.sv:59]
+INFO: [Synth 8-638] synthesizing module 'soundregister' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/new/soundregister.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'soundregister' (20#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/new/soundregister.sv:23]
+INFO: [Synth 8-638] synthesizing module 'lightregister' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/new/lightregister.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'lightregister' (21#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/new/lightregister.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'memIO' (22#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/memIO.sv:23]
+WARNING: [Synth 8-689] width (4) of port connection 'periodToPlay' does not match port width (3) of module 'memIO' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:59]
+INFO: [Synth 8-638] synthesizing module 'vgadisplaydriver' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab5/Lab6.srcs/sources_1/imports/Downloads/vgadisplaydriver.sv:13]
+	Parameter bmem_init bound to: bmem_screentest.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'bitmapmemory' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/bitmapmemory.sv:3]
+	Parameter Nloc bound to: 4096 - type: integer 
+	Parameter Dbits bound to: 12 - type: integer 
+	Parameter initfile bound to: bmem_screentest.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'bmem_screentest.mem' is read successfully [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/bitmapmemory.sv:13]
+INFO: [Synth 8-256] done synthesizing module 'bitmapmemory' (23#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/bitmapmemory.sv:3]
+INFO: [Synth 8-638] synthesizing module 'vgatimer' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab5/Lab6.srcs/sources_1/new/vgatimer.sv:25]
+INFO: [Synth 8-638] synthesizing module 'xycounter' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab5/Lab6.srcs/sources_1/imports/new/xycounter.sv:24]
+	Parameter width bound to: 800 - type: integer 
+	Parameter height bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xycounter' (24#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab5/Lab6.srcs/sources_1/imports/new/xycounter.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'vgatimer' (25#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab5/Lab6.srcs/sources_1/new/vgatimer.sv:25]
+INFO: [Synth 8-256] done synthesizing module 'vgadisplaydriver' (26#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/COMP541/Lab5/Lab6.srcs/sources_1/imports/Downloads/vgadisplaydriver.sv:13]
+INFO: [Synth 8-638] synthesizing module 'display8digit' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/display8digit.sv:3]
+INFO: [Synth 8-638] synthesizing module 'hexto7seg' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/sources_1/new/hexto7seg.sv:9]
+INFO: [Synth 8-256] done synthesizing module 'hexto7seg' (27#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/sources_1/new/hexto7seg.sv:9]
+INFO: [Synth 8-256] done synthesizing module 'display8digit' (28#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/display8digit.sv:3]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (29#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:19]
+INFO: [Synth 8-638] synthesizing module 'montek_sound_Nexys4' [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources/montek_sound_Nexys4.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'montek_sound_Nexys4' (30#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources/montek_sound_Nexys4.sv:21]
+WARNING: [Synth 8-3848] Net instr in module/entity top does not have driver. [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:30]
+INFO: [Synth 8-256] done synthesizing module 'top' (31#1) [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:4]
+WARNING: [Synth 8-3917] design top has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[8] driven by constant 0
+WARNING: [Synth 8-3331] design display8digit has unconnected port val[28]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port mem_addr[1]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port mem_addr[0]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[31]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[30]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[29]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[28]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[27]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[26]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[25]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[24]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[23]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[22]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[21]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[20]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[19]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[18]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[17]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[16]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[15]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[14]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[13]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[12]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[11]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[10]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[9]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[8]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[7]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[6]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[5]
+WARNING: [Synth 8-3331] design screenmemory has unconnected port din[4]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[31]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[30]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[29]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[28]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[27]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[26]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[25]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[24]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[23]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[22]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[21]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[20]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[19]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[18]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[15]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[14]
+WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[13]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 310.789 ; gain = 101.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[31] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[30] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[29] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[28] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[27] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[26] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[25] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[24] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[23] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[22] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[21] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[20] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[19] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[18] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[17] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[16] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[15] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[14] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[13] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[12] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[11] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[10] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[9] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[8] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[7] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[6] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[5] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[4] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[3] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[2] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[1] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin mips:instr[0] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:57]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[31] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[30] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[29] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[28] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[27] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[26] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[25] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[24] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[23] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[22] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[21] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[20] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[19] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[18] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[17] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[16] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[15] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[14] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[13] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[12] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[11] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[10] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[9] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[8] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[7] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[6] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[5] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[4] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[3] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[2] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[1] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+WARNING: [Synth 8-3295] tying undriven pin imem:instr[0] to constant 0 [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/sources_1/imports/sources_1/new/top.sv:58]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 310.789 ; gain = 101.543
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/clock.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/keyboard.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/keyboard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/keyboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/vga.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/reset.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/reset.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/reset.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/led.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/sound.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/sound.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/imports/new/sound.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/new/segdisplay.xdc]
+Finished Parsing XDC File [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/new/segdisplay.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.srcs/constrs_1/new/segdisplay.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  INV => LUT1: 1 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 629.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 629.035 ; gain = 419.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 629.035 ; gain = 419.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 629.035 ; gain = 419.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 629.035 ; gain = 419.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 66    
++---Registers : 
+	               32 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   5 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   8 Input     19 Bit        Muxes := 1     
+	  15 Input     10 Bit        Muxes := 1     
+	  16 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   8 Input      8 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+Module clockdivider_Nexys4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input     10 Bit        Muxes := 1     
+	  16 Input     10 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module fulladder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module addsub 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module logical 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+Module comparator 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module soundregister 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module lightregister 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module memIO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+Module xycounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 7     
+Module vgatimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module vgadisplaydriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module display8digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module montek_sound_Nexys4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design top has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design top has port LED[8] driven by constant 0
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (PCdisplay/count_reg[31]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[13]' (FDE) to 'keyboard/temp_char_reg[14]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[9]' (FDE) to 'keyboard/temp_char_reg[8]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[8]' (FDE) to 'keyboard/temp_char_reg[10]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[14]' (FDE) to 'keyboard/temp_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[10]' (FDE) to 'keyboard/temp_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/temp_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[13]' (FDE) to 'keyboard/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[9]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[8]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[14]' (FDE) to 'keyboard/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[10]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/keyb_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[22]' (FDE) to 'keyboard/temp_char_reg[21]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[11]' (FDE) to 'keyboard/temp_char_reg[17]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[17]' (FDE) to 'keyboard/temp_char_reg[16]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[21]' (FDE) to 'keyboard/temp_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[16]' (FDE) to 'keyboard/temp_char_reg[18]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[18]' (FDE) to 'keyboard/temp_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/temp_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[21]' (FDE) to 'keyboard/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[17]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[11]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[16]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[22]' (FDE) to 'keyboard/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[18]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/keyb_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[30]' (FDE) to 'keyboard/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[25]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[19]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[29]' (FDE) to 'keyboard/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[24]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[26]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/keyb_char_reg[27] )
+WARNING: [Synth 8-3332] Sequential element (keyboard/temp_char_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (keyboard/keyb_char_reg[27]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:12 . Memory (MB): peak = 629.035 ; gain = 419.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|imem         | p_0_out    | 512x32        | LUT            | 
+|bitmapmemory | p_0_out    | 2048x12       | LUT            | 
+|top          | p_0_out    | 512x32        | LUT            | 
+|top          | p_0_out    | 2048x12       | LUT            | 
++-------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------+-----------+----------------------+----------------------------------------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives                                   | 
++------------+--------------------------+-----------+----------------------+----------------------------------------------+
+|top         | mips/dp/registers/rf_reg | Implied   | 32 x 32              | RAM32M x 12                                  | 
+|top         | memIO/datamem/mem_reg    | Implied   | 16 x 32              | RAM16X1S x 32                                | 
+|top         | memIO/scrmem/mem_reg     | Implied   | 2 K x 4              | RAM16X1D x 4  RAM32X1D x 4  RAM128X1D x 36   | 
++------------+--------------------------+-----------+----------------------+----------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:25 . Memory (MB): peak = 629.035 ; gain = 419.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:54 . Memory (MB): peak = 725.516 ; gain = 516.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:01:57 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |BUFGMUX     |     4|
+|3     |CARRY4      |    50|
+|4     |INV         |     1|
+|5     |LUT1        |   111|
+|6     |LUT2        |   135|
+|7     |LUT3        |   123|
+|8     |LUT4        |   129|
+|9     |LUT5        |   213|
+|10    |LUT6        |   779|
+|11    |MMCME2_BASE |     1|
+|12    |MUXF7       |   131|
+|13    |MUXF8       |    29|
+|14    |RAM128X1D   |    36|
+|15    |RAM16X1D    |     4|
+|16    |RAM16X1S    |    32|
+|17    |RAM32M      |    12|
+|18    |RAM32X1D    |     4|
+|19    |FDRE        |   184|
+|20    |FDSE        |     1|
+|21    |IBUF        |     4|
+|22    |OBUF        |    48|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------+------+
+|      |Instance        |Module              |Cells |
++------+----------------+--------------------+------+
+|1     |top             |                    |  2033|
+|2     |  PCdisplay     |display8digit       |    54|
+|3     |  clkdv         |clockdivider_Nexys4 |    14|
+|4     |  display       |vgadisplaydriver    |   455|
+|5     |    myvgatimer  |vgatimer            |   452|
+|6     |      xy        |xycounter           |   448|
+|7     |  keyboard      |keyboard            |   118|
+|8     |  memIO         |memIO               |   151|
+|9     |    LEDs        |lightregister       |    12|
+|10    |    datamem     |dmem                |    32|
+|11    |    scrmem      |screenmemory        |    65|
+|12    |    sound       |soundregister       |    42|
+|13    |  mips          |mips                |  1063|
+|14    |    dp          |datapath            |  1063|
+|15    |      registers |register_file       |   973|
+|16    |  snd           |montek_sound_Nexys4 |   125|
++------+----------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:23 ; elapsed = 00:01:33 . Memory (MB): peak = 729.355 ; gain = 201.863
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 94 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  INV => LUT1: 1 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 36 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+153 Infos, 170 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 729.355 ; gain = 520.109
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 729.355 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 08 12:11:36 2017...

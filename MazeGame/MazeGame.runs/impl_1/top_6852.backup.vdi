@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Apr 24 18:59:08 2017
+# Process ID: 6852
+# Current directory: C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/impl_1/top.vdi
+# Journal file: C:/Users/Kishin/Documents/COMP541/Lab10PartC/Lab10PartC.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step write_bitstream"
+    (file "top.tcl" line 49)
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 24 18:59:22 2017...

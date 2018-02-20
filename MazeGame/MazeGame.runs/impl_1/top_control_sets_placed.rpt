@@ -1,0 +1,95 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Mon May 08 12:12:34 2017
+| Host         : Kishin running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    55 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |           10 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             108 |           39 |
+| Yes          | No                    | No                     |              31 |            8 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              17 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+------------------------------------+-----------------------------------+------------------+----------------+
+|     Clock Signal    |            Enable Signal           |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------------+------------------------------------+-----------------------------------+------------------+----------------+
+|  clkdv/clk12        |                                    |                                   |                2 |              2 |
+|  clkdv/clkout0_BUFG |                                    |                                   |                1 |              3 |
+|  clkdv/clk100       | keyboard/count[3]_i_1_n_0          | keyboard/count0                   |                1 |              4 |
+|  clkdv/clk12        | mips/dp/registers/sound_wr         | mips/dp/registers/period_reg[0]_3 |                1 |              4 |
+|  clkdv/clk12        | mips/dp/registers/light_reg[3]     | mips/dp/registers/light_reg[0]    |                1 |              4 |
+|  clkdv/clk100       | keyboard/keyb_char[15]_i_1_n_0     | keyboard/keyb_char[31]_i_1_n_0    |                2 |              5 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_3  |                                   |                2 |              7 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_4  |                                   |                2 |              7 |
+|  clkdv/clk100       | keyboard/keyb_char[15]_i_1_n_0     |                                   |                2 |              9 |
+|  clkdv/clk100       | keyboard/bits[9]_i_1_n_0           |                                   |                4 |             10 |
+|  clkdv/clk100       | keyboard/count0                    |                                   |                2 |             12 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_10 |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_11 |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_12 |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_2  |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_5  |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_6  |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_7  |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_8  |                                   |                4 |             16 |
+|  clkdv/clk12        | mips/dp/registers/period_reg[1]_9  |                                   |                4 |             16 |
+|  clkdv/clk100       |                                    | keyboard/clear                    |                5 |             20 |
+|  clkdv/clk100       |                                    |                                   |                7 |             24 |
+|  clkdv/clk100       |                                    | display/myvgatimer/xy/x0          |               12 |             26 |
+|  clkdv/clk12        |                                    | reset_IBUF                        |               14 |             30 |
+|  clkdv/clk12        | mips/dp/registers/dmem_wr          |                                   |                8 |             32 |
+|  clk_IBUF_BUFG      |                                    | snd/count0_carry__2_n_0           |                8 |             32 |
+|  clkdv/clk12        | mips/dp/registers/werf             |                                   |               12 |             96 |
++---------------------+------------------------------------+-----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 3      |                     1 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 7      |                     2 |
+| 9      |                     1 |
+| 10     |                     1 |
+| 12     |                     1 |
+| 16+    |                    16 |
++--------+-----------------------+
+
+
